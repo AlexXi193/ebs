@@ -23,16 +23,19 @@ public class IterativeTeleOp extends OpMode {
     @Override
     public void start(){
         //Code that runs when you hit start
+        System.out.println("Program started!");
     }
 
     @Override
     public void loop() {
         //Code that *LOOPS* after you hit start
+        System.out.println("");
     }
 
     @Override
     public void stop(){
         //Code that runs when you hit stop
+        System.out.println("Program Finished.");
 
         multTelemetry.addData("Runtime", runtime);
         multTelemetry.update();
